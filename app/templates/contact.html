@@ -1,0 +1,46 @@
+<div id="contact"
+    class="cover-container mx-auto my-5 text-start">
+    
+    <form class="row g-3" method="POST">
+        {% csrf_token %}
+        <div class="col-md-12">
+            <label for="inputYourName"
+                class="form-label">Your name</label>
+            <input type="text"
+            placeholder="Your name"
+                class="form-control"
+                id="inputYourName">
+        </div>
+        <div class="col-md-12">
+            <label for="inputEmail"
+                class="form-label">Email</label>
+            <input type="email"
+            placeholder="swelanauguste@gmail.com"
+                class="form-control"
+                id="inputEmail">
+        </div>
+        <div class="col-12">
+            <label for="inputPhone"
+                class="form-label">Phone number</label>
+            <input type="text"
+                class="form-control"
+                id="inputPhone"
+                placeholder="758-729-5289">
+        </div>
+        <div class="col-12">
+            <label for="inputMessage"
+                class="form-label">Message</label>
+            <textarea
+            rows="5"
+                class="form-control"
+                id="inputMessage"
+                placeholder="Your message..."></textarea>
+        </div>
+    
+      
+        <div class="col-12 text-end">
+            <button type="submit"
+                class="btn btn-primary px-5">Sign in</button>
+        </div>
+    </form>
+</div>
